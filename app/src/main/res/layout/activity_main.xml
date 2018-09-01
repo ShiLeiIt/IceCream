@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smart.qiushi.icecream.activity.MainActivity"
+    android:background="@drawable/bg"
+    tools:ignore="all">
+
+    <include layout="@layout/title_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_150"
+            android:background="@drawable/buy"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_35"
+            android:text="@string/buy_icecream"
+             />
+
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_buy"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_35"
+            android:text="@string/get_icecream"
+            android:background="@drawable/get" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/shape_bt_login_bg"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+
+</RelativeLayout>
