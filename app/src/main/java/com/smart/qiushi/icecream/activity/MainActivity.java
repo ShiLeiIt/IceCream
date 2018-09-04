@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
             case R.id.tv_buy:
                 //购买商品
                 startActivity(new Intent(MainActivity.this,BuyActivity.class));
-//                Toast.makeText(this, "买", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "买", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tv_get:
                 Toast.makeText(this, "取", Toast.LENGTH_SHORT).show();
