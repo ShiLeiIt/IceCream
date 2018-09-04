@@ -45,8 +45,8 @@ public class BuyCommitOrderActivity extends AppCompatActivity implements ShopCar
     TextView mTvCommitTotalTv;
     @Bind(R.id.tv_original_price)
     TextView mTvOriginalPrice;
-    @Bind(R.id.tv_preferential)//优惠活动
-    TextView mTvPreferential;
+    @Bind(R.id.tv_preferential)
+    TextView mTvPreferential;//优惠活动Text
     @Bind(R.id.buy_commit_bottom)
     LinearLayout mBuyCommitBottom;
     @Bind(R.id.iv_go_pay)
@@ -55,6 +55,7 @@ public class BuyCommitOrderActivity extends AppCompatActivity implements ShopCar
     private ShopCart mShopCart;
     private PopupFoodAdapter mFoodAdapter;
     private ArrayList<FoodMenu> mFoodMenuList;//数据源
+    public boolean mAlipay = true;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -78,6 +79,16 @@ public class BuyCommitOrderActivity extends AppCompatActivity implements ShopCar
         mRecycleBuyOrder.setAdapter(mFoodAdapter);
         mFoodAdapter.setShopCartImp(BuyCommitOrderActivity.this);
         mTvOriginalPrice.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);//设置中间划线
+
+        if (mShopCart!=null && mShopCart.getShoppingTotalPrice()>0) {
+            mTvOriginalPrice.setVisibility(View.VISIBLE);
+            mTvOriginalPrice.setText("￥ " + mShopCart.getShoppingTotalPrice());//活动价
+            mTvCommitTotalTv.setText(mShopCart.getShoppingTotalPrice() + "");//购物车总价
+        }else{
+            mTvOriginalPrice.setVisibility(View.GONE);
+            mTvCommitTotalTv.setVisibility(View.GONE);
+        }
+
     }
 
     @Override
@@ -88,9 +99,6 @@ public class BuyCommitOrderActivity extends AppCompatActivity implements ShopCar
     @Override
     public void remove(View view, int postion) {
         showTotalPrice();
-//        if (mShopCart.getShoppingAccount() == 0) {
-//            this.dismiss();
-//        }
 
     }
 
@@ -105,13 +113,12 @@ public class BuyCommitOrderActivity extends AppCompatActivity implements ShopCar
     private void showTotalPrice() {
         if (mShopCart != null && mShopCart.getShoppingTotalPrice() > 0) {
             mTvOriginalPrice.setVisibility(View.VISIBLE);
-            mTvOriginalPrice.setText("￥ " + mShopCart.getShoppingTotalPrice());
-//            totalPriceNumTextView.setVisibility(View.VISIBLE);
-//            totalPriceNumTextView.setText(""+mShopCart.getShoppingAccount());
+            mTvOriginalPrice.setText("￥ " + mShopCart.getShoppingTotalPrice());//活动价
+            mTvCommitTotalTv.setText(mShopCart.getShoppingTotalPrice() + "");//购物车总价
 
         } else {
-            mTvOriginalPrice.setVisibility(View.GONE);
-//            totalPriceNumTextView.setVisibility(View.GONE);
+            mTvOriginalPrice.setVisibility(View.GONE);//活动价
+            mTvCommitTotalTv.setVisibility(View.GONE);//总价
         }
     }
 
@@ -120,16 +127,31 @@ public class BuyCommitOrderActivity extends AppCompatActivity implements ShopCar
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_ali://选择支付宝支付
-
                 mIvCheck.setImageDrawable(getResources().getDrawable(R.drawable.check));
                 mIvUncheck.setImageDrawable(getResources().getDrawable(R.drawable.uncheck));
+                mAlipay = true;
                 break;
             case R.id.ll_wechat://选择微信支付
                 mIvCheck.setImageDrawable(getResources().getDrawable(R.drawable.uncheck));
                 mIvUncheck.setImageDrawable(getResources().getDrawable(R.drawable.check));
+                mAlipay = false;
                 break;
             case R.id.iv_go_pay:
-                Toast.makeText(this, "提交订单", Toast.LENGTH_SHORT).show();
+                if (mShopCart != null && mShopCart.getShoppingTotalPrice() > 0) {//通过购物车总价来判断是否跳转
+
+                    if (mAlipay) {    //判断是alipay还是wechatpay
+                        Toast.makeText(this, "支付宝支付", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(this, "微信支付", Toast.LENGTH_SHORT).show();
+                    }
+                    Intent intent = new Intent(BuyCommitOrderActivity.this, PayQrcodeActivity.class);
+                    intent.putExtra("alipay", mAlipay);
+                    startActivity(intent);
+//                    Toast.makeText(this, "提交订单", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "此时购物车为空", Toast.LENGTH_SHORT).show();
+                }
+
                 break;
         }
     }

@@ -17,7 +17,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
-        </receiver>
+        </receiver><!--开机自动启动App-->
 
         <activity
             android:name=".activity.SplashActivity"
@@ -27,14 +27,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".activity.BuyActivity" />
+        </activity><!--广告页面-->
+        <activity android:name=".activity.BuyActivity" /><!--物品购买页面-->
         <activity
             android:name=".activity.MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".activity.BuyCommitOrderActivity" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" /><!--登录页面-->
+        <activity android:name=".activity.BuyCommitOrderActivity" /><!--订单提交页面-->
         <!--android:screenOrientation="landscape"-->
-
+        <activity android:name=".activity.PayQrcodeActivity"  android:theme="@style/Theme.AppCompat.NoActionBar" /><!--支付二维码界面-->
     </application>
 
 </manifest>

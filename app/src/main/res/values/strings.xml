@@ -10,5 +10,7 @@
     <string name="please_check_terms_of_payment">请选择付款方式</string>
     <string name="ali_pay">支付宝支付</string>
     <string name="wechat_pay">微信支付</string>
+    <string name="open_ali_pay_scan">请打开支付宝APP扫描支付</string>
+    <string name="open_wechat_scan">请打开微信APP扫描支付</string>
 
 </resources>

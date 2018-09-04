@@ -14,6 +14,7 @@ import com.smart.qiushi.icecream.R;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 /**
  * Created by shilei on 2018/8/24
  */
@@ -37,7 +38,7 @@ public class MainActivity extends Activity {
         switch (view.getId()) {
             case R.id.tv_buy:
                 //购买商品
-                startActivity(new Intent(MainActivity.this,BuyActivity.class));
+                startActivity(new Intent(MainActivity.this, BuyActivity.class));
                 Toast.makeText(this, "买", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tv_get:
