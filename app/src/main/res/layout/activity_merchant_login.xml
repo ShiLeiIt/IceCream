@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_55"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome_login"
+        android:textColor="@color/deep_gray_2"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_horizontal"
+        android:text="@string/ke_rui_mi_ai_merchant"
+        android:textColor="@color/deep_gray_2"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:text="@string/user_name"
+        android:textColor="@color/detail_like" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:digits="@string/merchant_user_login_limit"
+        android:hint="@string/et_user_name_hint"
+        android:lines="1"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_hint"
+        android:textCursorDrawable="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:text="@string/password"
+        android:textColor="@color/detail_like" />
+
+    <EditText
+        android:id="@+id/et_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:digits="@string/merchant_user_login_limit"
+        android:hint="@string/et_password_hint"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_hint"
+        android:textCursorDrawable="@color/gray" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_35"
+        android:background="@drawable/shape_merchant_login_bg"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

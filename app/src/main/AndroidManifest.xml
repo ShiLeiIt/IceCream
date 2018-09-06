@@ -34,7 +34,15 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" /><!--登录页面-->
         <activity android:name=".activity.BuyCommitOrderActivity" /><!--订单提交页面-->
         <!--android:screenOrientation="landscape"-->
-        <activity android:name=".activity.PayQrcodeActivity"  android:theme="@style/Theme.AppCompat.NoActionBar" /><!--支付二维码界面-->
+        <activity
+            android:name=".activity.PayQrcodeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /><!--支付二维码界面-->
+        <activity
+            android:name=".activity.MerchantLoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /><!--商户登录页面-->
+        <activity
+            android:name=".activity.MerchantCenterManagementActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /><!--商户中心管理页面-->
     </application>
 
 </manifest>

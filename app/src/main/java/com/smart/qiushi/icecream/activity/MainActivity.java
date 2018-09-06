@@ -45,6 +45,8 @@ public class MainActivity extends Activity {
                 Toast.makeText(this, "取", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.bt_login:
+                //商户登录
+                startActivity(new Intent(MainActivity.this,MerchantLoginActivity.class));
                 Toast.makeText(this, "登录", Toast.LENGTH_SHORT).show();
                 break;
         }

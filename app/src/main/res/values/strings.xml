@@ -12,5 +12,19 @@
     <string name="wechat_pay">微信支付</string>
     <string name="open_ali_pay_scan">请打开支付宝APP扫描支付</string>
     <string name="open_wechat_scan">请打开微信APP扫描支付</string>
+    <string name="welcome_login">欢迎登录</string>
+    <string name="ke_rui_mi_ai_merchant">克瑞米艾商户版</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="merchant_user_login_limit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="et_user_name_hint">请输入账户名</string>
+    <string name="et_password_hint">请输入密码</string>
+    <string name="data_center">数据中心</string>
+    <string name="my_sales">我的销量</string>
+    <string name="system_management">系统管理</string>
+    <string name="list_of_goods">商品列表</string>
+    <string name="go_to_the_replenishment">去补货</string>
+    <string name="convergence_to_the">融合自提</string>
+    <string name="log_out">退出登录</string>
 
 </resources>
