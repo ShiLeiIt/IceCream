@@ -1,5 +1,6 @@
 package com.smart.qiushi.icecream.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -67,6 +68,7 @@ public class MerchantCenterManagementActivity extends AppCompatActivity {
                 tvListOfGoods.setBackgroundColor(getResources().getColor(R.color.merchant_tv_normal_bg));
                 tvGoToReplenishment.setBackgroundColor(getResources().getColor(R.color.merchant_tv_normal_bg));
                 tvConvergenceToThe.setBackgroundColor(getResources().getColor(R.color.merchant_tv_normal_bg));
+                startActivity(new Intent(MerchantCenterManagementActivity.this,SystemManagerActivity.class));
                 break;
             case R.id.tv_list_of_goods://商品列表
                 tvListOfGoods.setBackground(getResources().getDrawable(R.drawable.shape_merchant_tv_right_bg));

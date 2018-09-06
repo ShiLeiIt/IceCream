@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_25"
+        android:background="@drawable/shape_system_manager_select_bt_bg"
+        android:text="@string/cancel"
+        android:textColor="@color/popupwindow_text" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/shape_system_manager_select_bt_bg"
+        android:text="@string/refrigeration"
+        android:textColor="@color/popupwindow_text" />
+
+</LinearLayout>

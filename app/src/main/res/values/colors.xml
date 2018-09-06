@@ -43,5 +43,9 @@
     <color name="buy_bg3">#F8DE8B</color>
     <color name="merchant_tv_select_bg">#ff760c</color>
     <color name="merchant_tv_normal_bg">#f4f4f4</color>
+    <color name="merchant_system_manager_start">#fa4238</color>
+    <color name="merchant_system_manager_center">#fe5b25</color>
+    <color name="merchant_system_manager_end">#ff8202</color>
+    <color name="popupwindow_text">#f36541</color>
 
 </resources>

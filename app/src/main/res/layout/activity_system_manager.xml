@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_system_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_title_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:background="@drawable/shape_system_manager_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_refriration"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_refrigeration"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:src="@drawable/img_detail"
+                android:text="@string/refrigeration"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_fresh"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_fresh"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/fresh"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_cleaning"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_cleaning"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/cleaning"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_standby"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_standby"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:src="@drawable/img_detail"
+                android:text="@string/standby"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_thaw"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_thaw"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/thaw"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_bus_sterilization"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_bus_sterilization"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/bus_sterilization"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_grow_again"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_grow_again"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:src="@drawable/img_detail"
+                android:text="@string/grow_again"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_heavy_operation"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_heavy_operation"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/heavy_operation"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_automatic_discharging"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/system_manager_item_automatic_discharging"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/automatic_discharging"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
