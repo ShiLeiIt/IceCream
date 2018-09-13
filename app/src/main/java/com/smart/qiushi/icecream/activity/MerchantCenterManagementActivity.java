@@ -93,6 +93,7 @@ public class MerchantCenterManagementActivity extends AppCompatActivity {
                 tvSystemManager.setBackgroundColor(getResources().getColor(R.color.merchant_tv_normal_bg));
                 tvListOfGoods.setBackgroundColor(getResources().getColor(R.color.merchant_tv_normal_bg));
                 tvGoToReplenishment.setBackgroundColor(getResources().getColor(R.color.merchant_tv_normal_bg));
+                startActivity(new Intent(MerchantCenterManagementActivity.this,FusionSinceTheLiftActivity.class));
                 break;
             case R.id.bt_log_out://退出登录
                 break;

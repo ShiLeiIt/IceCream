@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape_system_manager_select_bt_bg">
+
+    <ImageView
+        android:id="@+id/iv_fusion"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:src="@drawable/img_detail" />
+
+    <TextView
+        android:id="@+id/tv_fusion_item_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_toEndOf="@+id/iv_fusion"
+        android:text="20g"
+        android:textColor="@color/popupwindow_text" />
+
+    <TextView
+        android:id="@+id/tv_fusion_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_toEndOf="@+id/iv_fusion"
+        android:text="脏脏包冰淇淋"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/tv_have_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_sales" />
+
+        <TextView
+            android:id="@+id/tv_have_sales_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/tv_have_sales"
+            android:text="5000"
+            tools:ignore="ObsoleteLayoutParam" />
+    </LinearLayout>
+
+</RelativeLayout>

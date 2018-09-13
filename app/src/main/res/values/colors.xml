@@ -47,5 +47,6 @@
     <color name="merchant_system_manager_center">#fe5b25</color>
     <color name="merchant_system_manager_end">#ff8202</color>
     <color name="popupwindow_text">#f36541</color>
+    <color name="add_fusion_product_bg">#fc4732</color>
 
 </resources>

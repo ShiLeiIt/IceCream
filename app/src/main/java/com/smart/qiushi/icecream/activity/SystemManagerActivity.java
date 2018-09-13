@@ -145,6 +145,10 @@ public class SystemManagerActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        mPopupWindow.dismiss();
+        if (mPopupWindow!=null) {
+            mPopupWindow.dismiss();
+        }
+        finish();
+
     }
 }

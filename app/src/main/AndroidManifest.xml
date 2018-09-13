@@ -28,11 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity><!--广告页面-->
-        <activity android:name=".activity.BuyActivity" /><!--物品购买页面-->
+        <activity
+            android:name=".activity.BuyActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /><!--物品购买页面-->
         <activity
             android:name=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" /><!--登录页面-->
-        <activity android:name=".activity.BuyCommitOrderActivity" /><!--订单提交页面-->
+        <activity
+            android:name=".activity.BuyCommitOrderActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /><!--订单提交页面-->
         <!--android:screenOrientation="landscape"-->
         <!--android:screenOrientation="portrait"-->
         <activity
@@ -47,6 +51,9 @@
         <activity
             android:name=".activity.SystemManagerActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" /><!--系统管理页面-->
+        <activity
+            android:name=".activity.FusionSinceTheLiftActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /><!--融合自提页面-->
     </application>
 
 </manifest>

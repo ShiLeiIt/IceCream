@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_title_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_fusion_since_the_life"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@drawable/shape_system_manager_bg" />
+
+    <TextView
+        android:id="@+id/tv_add_fusion_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@color/add_fusion_product_bg"
+        android:gravity="center"
+        android:text="添加融合新产品"
+        android:textColor="@color/white" />
+
+
+</FrameLayout>

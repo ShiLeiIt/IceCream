@@ -18,6 +18,7 @@ public class App extends Application {
         sInstance = this;
         mApiService = new Retrofit.Builder()
                 .baseUrl("http://7xk9dj.com1.z0.glb.clouddn.com/banner/api/")
+//                .baseUrl("http://127.0.0.1/img.php?img=1")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build().create(ApiService.class);
 

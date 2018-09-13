@@ -37,5 +37,6 @@
     <string name="heavy_operation">重操作</string>
     <string name="automatic_discharging">自动出料</string>
     <string name="cancel">取消</string>
+    <string name="have_sales">已销售：</string>
 
 </resources>

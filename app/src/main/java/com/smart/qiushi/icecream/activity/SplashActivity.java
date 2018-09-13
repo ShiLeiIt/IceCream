@@ -34,12 +34,14 @@ public class SplashActivity extends Activity implements BGABanner.Delegate<Image
         initView();
     }
 
+
     private void initView() {
         mCubeBanner = findViewById(R.id.banner_main_cube);
         loadData(mCubeBanner, 6);
         //设置委托之后,onBannerItemClick()这个方法才走，否则事件触发不了
         mCubeBanner.setDelegate(this);
     }
+
 
     /**
      * @param banner
@@ -78,7 +80,7 @@ public class SplashActivity extends Activity implements BGABanner.Delegate<Image
 
     @Override
     public void onBannerItemClick(BGABanner banner, ImageView itemView, @Nullable String model, int position) {
-        startActivity(new Intent(SplashActivity.this,MainActivity.class));
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
 
         Toast.makeText(this, "点击了第" + (position + 1) + "页", Toast.LENGTH_SHORT).show();
     }

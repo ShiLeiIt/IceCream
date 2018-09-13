@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.smart.qiushi.icecream.R;
 import com.smart.qiushi.icecream.adpter.LeftMenuAdapter;
